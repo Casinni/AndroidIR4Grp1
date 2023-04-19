@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Ir4Grp2</string>
+    <string name="welcome">Validate</string>
+    <string name="close">Close</string>
+    <string name="validate">Validate</string>
+    <string name="clear">Clear</string>
+    <string name="hintlogin">Write a  Login</string>
+    <string name="hintPWD">Write a Password</string>
+    <string name="todo">TODO</string>
+    <string name="alarme">Alarme</string>
+    <string name="esaip">ESAIP</string>
+    <string name="video">VIDEO</string>
+    <string name="email">EMAIL</string>
+    <string name="appel">APPEL</string>
+    <string name="login">titi</string>
+    <string name="pwd">toto</string>
+    <string name="fb">Flappy Bird</string>
+    <string name="dj">Doodle Jump</string>
+    <string name="p4">Puissance 4</string>
+
+
+</resources>

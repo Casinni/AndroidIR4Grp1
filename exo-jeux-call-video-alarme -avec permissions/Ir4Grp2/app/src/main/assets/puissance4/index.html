@@ -1,0 +1,173 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		<div id="message" class="message"></div>	
+
+
+		<div class="content">
+			<div id="mode" class="mode">
+				<div class="appelation">
+					<input type="text" placeholder="Nom du joueur 1" id="namePerso1">
+					<input type="text" placeholder="Nom du joueur 2 (falcultatif)" id="namePerso2">
+				</div> 
+				Choix du mode de jeu :
+				
+				<div class=""> 
+					Jouer contre l'ordinateur :<br />
+					<button onclick="lancerJeu(0)">Niveau 1</button>
+					<button onclick="lancerJeu(1)">Niveau 2</button>
+					<button onclick="lancerJeu(2)">Niveau 3</button>
+				</div>
+				
+				<div class="">
+					<button onclick="lancerJeu(3)">Jouer à deux</button>
+				</div>
+			</div>
+			<div id="grille" class="grille">
+				<div class="bloc">
+					<div id="cellule5-0" class="cellule" onclick="getPlayerChoice(0)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule5-1" class="cellule" onclick="getPlayerChoice(1)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule5-2" class="cellule" onclick="getPlayerChoice(2)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule5-3" class="cellule" onclick="getPlayerChoice(3)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule5-4" class="cellule" onclick="getPlayerChoice(4)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule5-5" class="cellule" onclick="getPlayerChoice(5)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule5-6" class="cellule" onclick="getPlayerChoice(6)"></div>
+				</div>
+				
+				<div class="bloc">
+					<div id="cellule4-0" class="cellule" onclick="getPlayerChoice(0)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule4-1" class="cellule" onclick="getPlayerChoice(1)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule4-2" class="cellule" onclick="getPlayerChoice(2)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule4-3" class="cellule" onclick="getPlayerChoice(3)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule4-4" class="cellule" onclick="getPlayerChoice(4)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule4-5" class="cellule" onclick="getPlayerChoice(5)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule4-6" class="cellule" onclick="getPlayerChoice(6)"></div>
+				</div>
+				
+				<div class="bloc">
+					<div id="cellule3-0" class="cellule" onclick="getPlayerChoice(0)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule3-1" class="cellule" onclick="getPlayerChoice(1)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule3-2" class="cellule" onclick="getPlayerChoice(2)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule3-3" class="cellule" onclick="getPlayerChoice(3)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule3-4" class="cellule" onclick="getPlayerChoice(4)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule3-5" class="cellule" onclick="getPlayerChoice(5)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule3-6" class="cellule" onclick="getPlayerChoice(6)"></div>
+				</div>
+				
+				<div class="bloc">
+					<div id="cellule2-0" class="cellule" onclick="getPlayerChoice(0)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule2-1" class="cellule" onclick="getPlayerChoice(1)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule2-2" class="cellule" onclick="getPlayerChoice(2)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule2-3" class="cellule" onclick="getPlayerChoice(3)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule2-4" class="cellule" onclick="getPlayerChoice(4)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule2-5" class="cellule" onclick="getPlayerChoice(5)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule2-6" class="cellule" onclick="getPlayerChoice(6)"></div>
+				</div>
+				
+				<div class="bloc">
+					<div id="cellule1-0" class="cellule" onclick="getPlayerChoice(0)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule1-1" class="cellule" onclick="getPlayerChoice(1)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule1-2" class="cellule" onclick="getPlayerChoice(2)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule1-3" class="cellule" onclick="getPlayerChoice(3)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule1-4" class="cellule" onclick="getPlayerChoice(4)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule1-5" class="cellule" onclick="getPlayerChoice(5)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule1-6" class="cellule" onclick="getPlayerChoice(6)"></div>
+				</div>
+				
+				<div class="bloc">
+					<div id="cellule0-0" class="cellule" onclick="getPlayerChoice(0)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule0-1" class="cellule" onclick="getPlayerChoice(1)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule0-2" class="cellule" onclick="getPlayerChoice(2)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule0-3" class="cellule" onclick="getPlayerChoice(3)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule0-4" class="cellule" onclick="getPlayerChoice(4)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule0-5" class="cellule" onclick="getPlayerChoice(5)"></div>
+				</div>
+				<div class="bloc">
+					<div id="cellule0-6" class="cellule" onclick="getPlayerChoice(6)"></div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div id="infoPerso" class="infoPerso">
+			<div id="infoPerso1"></div>
+			<div id="infoPerso2"></div>
+		</div>
+	
+	</body>
+</html>
+
+<script src="script.js"></script>
